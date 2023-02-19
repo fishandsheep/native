@@ -25,10 +25,4 @@
 siege -c 100 -t 1M "http://localhost:8080/user/list"
 ```
 
-java -jar 启动:
-
-![image](./out/java-jar.png)
-
-native 启动:
-
-![image](./out/native.png)
+![image](./out/jar vs native.png)
