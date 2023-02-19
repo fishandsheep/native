@@ -25,4 +25,4 @@
 siege -c 100 -t 1M "http://localhost:8080/user/list"
 ```
 
-![image](./jar vs native.png)
+![image](./native.png)
