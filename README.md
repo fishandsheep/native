@@ -20,8 +20,15 @@
 | 内存占用(满负载)  | 600M+(800M+)    | 200M+(300M+)  |
 
 4. 压力测试 详情
-java -jar 启动
-![image](./out/jar.png)
 
-native 启动
+```
+siege -c 100 -t 1M "http://localhost:8080/user/list"
+```
+
+java -jar 启动:
+
+![image](./out/java-jar.png)
+
+native 启动:
+
 ![image](./out/native.png)
