@@ -17,11 +17,12 @@
 |  大小 | 41M + JRE    | 133M(47M)  |
 | 启动速度  | 3.234s    |  0.109 |
 | 内存占用(空闲)  | 284M    | 150M  |
-| 内存占用(满负载)  | 600M+(800M+)    | 200M+(300M+)  |
+| 内存占用(满负载)  | 660M-820M    | 350M~520M  |
 
 4. 压力测试 详情
 
 ```
+siege -c 10 -r 1 'http://localhost:8080/user/save POST <./postdata.json'
 siege -c 100 -t 1M "http://localhost:8080/user/list"
 ```
 
